@@ -1,0 +1,31 @@
+.main-footer{
+    color: white;
+     background-color: #8B4513;
+     padding-top: 3em;
+     position: relative;
+     bottom:0;
+    
+     text-align: center;
+ }
+ 
+ .page-container{
+     display:flex;
+     flex-direction:column;
+     min-height:100vh;
+   }
+   
+   .content-wrap{
+     flex: 1;
+   }
+ 
+   .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logos img {
+    width: 10vw;
+    margin: 0 .5em 0;
+  }
