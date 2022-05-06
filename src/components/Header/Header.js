@@ -13,8 +13,15 @@ import {
 } from "./HeaderElements.js";
 
 import Logo from "../../images/logo.svg";
+import { useNavigate } from "react-router-dom";
 
 const Header = ({ toggle }) => {
+  const navigate = useNavigate();
+
+  const handleHeader = () => {
+    navigate('/all-routes');
+  }
+
   return (
     <>
       <Nav>

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import {FaBars} from 'react-icons/fa'
 import {Link as LinkR} from 'react-router-dom'
-import {Link as LinkS} from 'react-scroll'
 
 
 export const Nav = styled.nav `
@@ -73,7 +72,7 @@ export const NavItem = styled.li`
 height:80px;
 `;
 
-export const NavLink = styled(LinkS)`
+export const NavLink = styled(LinkR)`
 color: #000;
 display:flex;
 align-items:center;
