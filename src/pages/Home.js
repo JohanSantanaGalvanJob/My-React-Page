@@ -2,8 +2,7 @@ import React from 'react'
 import Header from "../components/Header/Header"
 import Sidebar from "../components/SideBar/index"
 import { useState } from "react"
-// import '../ImageStyle.css'
-import Carousel from 'react-elastic-carousel'
+ import '../Carousel.css'
 import CarouselElement from '../components/Carrousel/CarrouselElements';
 import "./Home.css";
 
@@ -39,27 +38,8 @@ const Home = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Header toggle={toggle} />
-      {/* <div className='carrousel-images'>
-          {
-            carrouselList.map((index) => <img src={index.src} title={index.title} alt="images"
-              className='carrousel-image' />)
-          }
-        </div> */}
-      <div className="home-carousel-wrapper">
-        <Carousel breakPoints={breakPoints} style={{ marginTop: "4em" }}>
-
-          {
-            // carrouselList.map((item, index) => <img key={index} src={item.src} title={item.title} alt="images" className='carrousel-image' />)
-            carrouselList.map((item, index) =>
-              // <CarouselElement>
-
-              <img key={index} src={item.src} title={item.title} alt="images" />
-              // </CarouselElement>
-            )
-          }
-
-
-        </Carousel>
+      <div className='carousel'>
+      <CarouselElement/>
       </div>
     </>
 
