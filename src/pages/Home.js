@@ -5,6 +5,7 @@ import { useState } from "react"
  import '../Carousel.css'
 import CarouselElement from '../components/Carrousel/CarrouselElements';
 import "./Home.css";
+import { Text } from 'react-desktop/windows';
 
 
 
@@ -41,6 +42,21 @@ const Home = () => {
       <div className='carousel'>
       <CarouselElement/>
       </div>
+
+      <div style={{
+      display: 'block', width: 1000, paddingLeft: 30,marginTop:50
+    }}>
+      <h4>React Desktop Windows Text Component</h4>
+      <Text
+        background="lightblue"
+        width="40%"
+        padding="10px"> 
+        Hello, This is a sample text to demonstrate 
+        the Text Component of React Desktop Library 
+        in ReactJS. How are you?
+      </Text>
+    </div>
+
     </>
 
 
