@@ -26,27 +26,23 @@
   }
   
   .logos img {
+    padding: .5em;
     width: 30vw;
     margin: 0 .5em 0;
   }
 
   @media screen and (min-width: 576px) {
     .logos img {
-      width: 50vw;
+      width: 30vw;
       margin: 0 .5em 0;
     }
   }
   
   @media screen and (min-width: 768px) {
     .logos img {
-      width: 40vw;
-      margin: 0 .5em 0;
-    }
-  } 
-  
-  @media screen and (min-width: 992px) {
-    .logos img {
       width: 30vw;
       margin: 0 .5em 0;
     }
   } 
+  
+ 

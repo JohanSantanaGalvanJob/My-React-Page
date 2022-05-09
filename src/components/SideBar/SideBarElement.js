@@ -74,7 +74,7 @@ border-radius:50px;
 background:#694610;
 white-space: nowrap;
 padding: 16px 64px;
-color: #010606;
+color: #ffffff;
 font-size: 16px;
 outline:none;
 border:none;

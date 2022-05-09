@@ -32,12 +32,13 @@ max-width: 1100px;
 `;
 
 export const NavLogo = styled(LinkR)`
+width: 1vw;
 color: #000;
 justify-self: flex-start;
 cursor:pointer;
 font-size: 1.5rem;
 display:flex;
-align-items:center;
+align-items:left;
 margin-left:24px:
 font-weight: bold;
 text-decoration:none;
@@ -116,7 +117,7 @@ export const NavBtnLink = styled(LinkR)`
   background: #694610;
   white-space: nowrap;
   padding: 10px 22px;
-  color: #000;
+  color: #fff;
   font-size: 16px;
   outline: none;
   border: none;

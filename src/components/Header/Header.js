@@ -12,7 +12,7 @@ import {
   NavBtnLink,
 } from "./HeaderElements.js";
 
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/images/LogoSabiosGuias-Inverso.png";
 import { useNavigate } from "react-router-dom";
 
 const Header = ({ toggle }) => {
@@ -44,7 +44,7 @@ const Header = ({ toggle }) => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-          <NavBtnLink to="/all-routes">Sign In</NavBtnLink>
+          <NavBtnLink to="/all-routes">Button Example</NavBtnLink>
         </NavBtn>
         </NavbarContainer>
        

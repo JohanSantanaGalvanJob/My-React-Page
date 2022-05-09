@@ -32,11 +32,11 @@ const Footer = () => {
                     </div>
                     {/* Column3 */}
                     <div className="col">
-                        <h4>WELL ANOTHER COLUMN</h4>
+                        <h4>LOREM IPSUM</h4>
                         <ul className="list-unstyled">
-                            <li>Dank MEMES</li>
-                            <li>GHRTH stuff</li>
-                            <li>JHTYJ</li>
+                            <li>ROW 1</li>
+                            <li>ROW 2</li>
+                            <li>ROW 3</li>
                         </ul>
 
                     </div>

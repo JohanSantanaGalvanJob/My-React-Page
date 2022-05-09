@@ -2,11 +2,13 @@ import React from 'react'
 import Header from "../components/Header/Header"
 import Sidebar from "../components/SideBar/index"
 import { useState } from "react"
- import '../Carousel.css'
-import CarouselElement from '../components/Carrousel/CarrouselElements';
-import "./Home.css";
-import { Text } from 'react-desktop/windows';
 
+import CarouselElement from '../components/Carrousel/CarrouselElements';
+// import { Text } from 'react-desktop/windows';
+
+import "./Home.css";
+
+import Footer from "../components/Footer/Footer";
 
 
 
@@ -17,21 +19,10 @@ const Home = () => {
     setIsOpen(!isOpen)
   };
 
-  const carrouselList = [
-    { src: './img/sabios_guias_1.jpg', title: 'img1', description: 'bar' },
-    { src: './img/sabios_guias_2.jpg', title: 'img2', description: 'bar' },
-    { src: './img/sabios_guias_3.jpg', title: 'img3', description: 'bar' },
-    { src: './img/sabios_guias_3.jpg', title: 'img3', description: 'bar' },
-    { src: './img/sabios_guias_1.jpg', title: 'img1', description: 'bar' },
-    { src: './img/sabios_guias_2.jpg', title: 'img2', description: 'bar' },
-  ];
-
-  const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 1 },
-    { width: 768, itemsToShow: 1 },
-    { width: 1200, itemsToShow: 1 },
-
+  const arrayText = [
+    { src: 'educacion_icon.png', alt: 'Educación', description: 'El proyecto Sabios Guías Intérpretes pretende acercarse aun más a la población juvenil a través del Programa enSeñas con el objetivo de incorporar de manera integral nuestros valores históricos, culturales y patrimoniales a la práctica educativa, entendida en su generalidad: formal, no formal e informal.' },
+    { src: 'guias_icon-copia.png', alt: 'Guías', description: 'Te proponemos una nueva forma de recorrer nuestros pueblos y municipios. De la mano de nuestros mayores podrás vivir de primera mano los usos originales de los lugares de interés y sus vivencias de antaño. Disfruta de la Naturaleza y también de la Historia.' },
+    { src: 'vidassabias_icon-copia.png', alt: 'Vidas Sabias', description: 'Vidas Sabias nace con el objetivo de fomentar la recopilación audiovisual del patrimonio cultural inmaterial que las personas de Canarias nos aportan. Un reconocimiento al valor del saber popular y que no está escrito. Necesario para conocer y entender la riqueza cultural que nos rodea.' },
   ];
 
   return (
@@ -39,23 +30,26 @@ const Home = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Header toggle={toggle} />
-      <div className='carousel'>
-      <CarouselElement/>
+
+      <div className='home-carousel'>
+        <CarouselElement />
       </div>
 
-      <div style={{
-      display: 'block', width: 1000, paddingLeft: 30,marginTop:50
-    }}>
-      <h4>React Desktop Windows Text Component</h4>
-      <Text
-        background="lightblue"
-        width="40%"
-        padding="10px"> 
-        Hello, This is a sample text to demonstrate 
-        the Text Component of React Desktop Library 
-        in ReactJS. How are you?
-      </Text>
-    </div>
+      <div className='home-array-text-container'>
+        {arrayText.map((item) =>
+          <div className='home-array-text-item'>
+            <div className='home-array-text-image'>
+              <img src={`/img/${item.src}`} alt={item.alt} />
+            </div>
+
+            <div className='home-array-text-description'>
+              <p>{item.description}</p>
+            </div>
+          </div>
+        )}
+      </div>
+
+      <Footer />
 
     </>
 
