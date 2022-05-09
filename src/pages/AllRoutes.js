@@ -4,7 +4,8 @@ import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import Header from "../components/Header/Header";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import Sidebar from "../components/SideBar/index"
+import Sidebar from "../components/SideBar/index";
+import Footer from "../components/Footer/Footer";
 
 export default function AllRoutes() {
   const navigate = useNavigate();
@@ -44,6 +45,7 @@ export default function AllRoutes() {
           }
         </div>
       </div>
+      <Footer />
     </>
   );
 }

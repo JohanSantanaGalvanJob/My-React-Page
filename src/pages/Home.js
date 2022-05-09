@@ -2,12 +2,8 @@ import React from 'react'
 import Header from "../components/Header/Header"
 import Sidebar from "../components/SideBar/index"
 import { useState } from "react"
-
 import CarouselElement from '../components/Carrousel/CarrouselElements';
-// import { Text } from 'react-desktop/windows';
-
 import "./Home.css";
-
 import Footer from "../components/Footer/Footer";
 
 
@@ -30,11 +26,9 @@ const Home = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Header toggle={toggle} />
-
       <div className='home-carousel'>
         <CarouselElement />
       </div>
-
       <div className='home-array-text-container'>
         {arrayText.map((item) =>
           <div className='home-array-text-item'>
@@ -48,12 +42,8 @@ const Home = () => {
           </div>
         )}
       </div>
-
       <Footer />
-
     </>
-
-
   );
 };
 
