@@ -43,7 +43,7 @@ const Footer = () => {
 
 
                 <hr />
-                <div className="row">
+                <div className="row" >
                     <p className="col-sm">
                         &copy;{new Date().getFullYear()} Legal • Política de privacidad •
                         Política de cookies

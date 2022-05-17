@@ -22,7 +22,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="/all-routes">Todas las Rutas</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to='/all-routes'>Button Example</SidebarRoute>
+          <SidebarRoute to='/all-routes'>Dark Mode</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+    <channel>
+        <title>Mi canal de RSS para Sabios Guías Intérpretes</title>
+        <link>https://twitter.com/ieselrincon</link>
+        <description>Canal dedicado a poner las últimas actualizaciones de las redes sociales de los participantes en este proyecto</description>
+
+        <item>
+            <title>IES El rincon Twitter</title>
+            <link>https://twitter.com/ieselrincon</link>
+            <description>Tweets sobre el centro IES El Rincón</description>
+        </item>
+
+    </channel>
+
+</rss>
