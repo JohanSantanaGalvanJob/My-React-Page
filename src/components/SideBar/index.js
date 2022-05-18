@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useState } from "react";
 import {
   SidebarContainer,
   Icon,
@@ -11,6 +12,14 @@ import {
 } from "./SideBarElement";
 
 const Sidebar = ({ isOpen, toggle }) => {
+  const [color, setColor] = useState("light");
+
+  const changeColor = () => setColor(color === "light" ? "dark" : "light");
+
+  useEffect(() => {
+    document.body.style.backgroundColor = color === "light" ? "white" : "black";
+  }, [color]);
+
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -21,8 +30,8 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="/">Inicio</SidebarLink>
           <SidebarLink to="/all-routes">Todas las Rutas</SidebarLink>
         </SidebarMenu>
-        <SideBtnWrap>
-          <SidebarRoute to='/all-routes'>Dark Mode</SidebarRoute>
+        <SideBtnWrap onClick={changeColor}>
+          <SidebarRoute to=''>Dark Mode</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
