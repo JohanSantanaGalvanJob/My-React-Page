@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import { useEffect, useState } from "react";
 import {
   Nav,
   NavbarContainer,
@@ -17,6 +18,13 @@ import { useNavigate } from "react-router-dom";
 
 const Header = ({ toggle }) => {
   const navigate = useNavigate();
+  const [color, setColor] = useState("light");
+
+  const changeColor = () => setColor(color === "light" ? "dark" : "light");
+
+  useEffect(() => {
+    document.body.style.backgroundColor = color === "light" ? "white" : "black";
+  }, [color]);
 
   const handleHeader = () => {
     navigate("/all-routes");
@@ -44,8 +52,8 @@ const Header = ({ toggle }) => {
               <NavLink to="/Rss">Canal RSS</NavLink>
             </NavItem>
           </NavMenu>
-          <NavBtn>
-            <NavBtnLink to="/all-routes">Dark Mode</NavBtnLink>
+          <NavBtn onClick={changeColor}>
+            <NavBtnLink to="">Dark Mode</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
