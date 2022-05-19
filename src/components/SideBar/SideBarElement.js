@@ -14,7 +14,7 @@ align-items:center;
 top:0;
 left:0;
 transition:0.3 ease-in-out;
-opacity: ${({isOpen}) => (isOpen ? '100%' : '0')};
+opacity: ${({isOpen}) => (isOpen ? '95%' : '0')};
 top:  ${({isOpen}) => (isOpen ? '0' : '-100%')};
 `;
 

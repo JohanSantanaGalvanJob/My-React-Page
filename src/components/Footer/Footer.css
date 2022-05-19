@@ -1,48 +1,48 @@
-.main-footer{
-    color: white;
-     background-color: #8B4513;
-     padding-top: 3em;
-     position: relative;
-     bottom:0;
-    margin-top: 3em;
-     text-align: center;
- }
- 
- .page-container{
-     display:flex;
-     flex-direction:column;
-     min-height:100vh;
-   }
-   
-   .content-wrap{
-     flex: 1;
-   }
- 
-   .logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  
+.main-footer {
+  color: white;
+  background-color: #709775;
+  padding-top: 3em;
+  position: relative;
+  bottom: 0;
+  margin-top: 3em;
+  text-align: center;
+  padding-bottom: 1.5em;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logos img {
+  padding: .5em;
+  max-width: 25vw;
+  margin: 0 .5em 0;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 576px) {
   .logos img {
-    padding: .5em;
     width: 30vw;
     margin: 0 .5em 0;
   }
+}
 
-  @media screen and (min-width: 576px) {
-    .logos img {
-      width: 30vw;
-      margin: 0 .5em 0;
-    }
+@media screen and (min-width: 768px) {
+  .logos img {
+    width: 30vw;
+    margin: 0 .5em 0;
   }
-  
-  @media screen and (min-width: 768px) {
-    .logos img {
-      width: 30vw;
-      margin: 0 .5em 0;
-    }
-  } 
-  
- 
+}
