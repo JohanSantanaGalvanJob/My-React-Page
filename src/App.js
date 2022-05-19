@@ -7,7 +7,7 @@ import {
 import Home from "./pages/Home";
 import AllRoutes from "./pages/AllRoutes";
 import Rss from "./components/RSS/Rss";
-import AFrameProject from "./components/AFrame/AFrame";
+import AFrameProject from "./pages/AFrame/AFrame";
 
 
 

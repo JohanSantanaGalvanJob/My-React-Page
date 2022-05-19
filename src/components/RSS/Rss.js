@@ -1,9 +1,12 @@
+import { useEffect } from "react";
+import rss from '../../assets/Rss.xml';
+
 const Rss = () => {
-  return (
-    <div className="main-rss-section">
-     <a href="Rss.xml">Canal RSS</a>
-    </div>
-  );
+  useEffect((()=> {
+
+    window.open(rss,'_self')
+
+  }))
 };
 
 export default Rss;
