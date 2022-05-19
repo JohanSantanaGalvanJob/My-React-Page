@@ -51,6 +51,9 @@ const Header = ({ toggle }) => {
             <NavItem>
               <NavLink to="/Rss">Canal RSS</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink to="/Aframe">Aframe</NavLink>
+            </NavItem>
           </NavMenu>
           <NavBtn onClick={changeColor}>
             <NavBtnLink to="">Dark Mode</NavBtnLink>

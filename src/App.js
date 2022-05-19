@@ -6,7 +6,8 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import AllRoutes from "./pages/AllRoutes";
-import Rss from "./components/RSS/Rss.xml";
+import Rss from "./components/RSS/Rss";
+import AFrameProject from "./components/AFrame/AFrame";
 
 
 
@@ -15,6 +16,7 @@ function App() {
     <>
       <Router>
         <Routes>
+        <Route path="/Aframe" element={<AFrameProject />} />
           <Route path="/all-routes" element={<AllRoutes />} />
           <Route path="/Rss" element={<Rss />} />
           <Route path="/home" element={<Home />} />
