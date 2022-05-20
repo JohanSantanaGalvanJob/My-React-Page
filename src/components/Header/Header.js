@@ -19,12 +19,29 @@ import { useNavigate } from "react-router-dom";
 const Header = ({ toggle }) => {
   const navigate = useNavigate();
   const [color, setColor] = useState("light");
+  const [fontColor, setFontColor] = useState("green");
 
-  const changeColor = () => setColor(color === "light" ? "dark" : "light");
+  const changeAll = () => {
+    changeColor();
+    changeFontColor();
+  }
+
+  const changeColor = () => setColor(color === "light" ? "#5e5e5e" : "light");
+  const changeFontColor = () => setFontColor(fontColor === "black" ? "green" : "black");
 
   useEffect(() => {
-    document.body.style.backgroundColor = color === "light" ? "white" : "black";
+    document.body.style.backgroundColor = color === "light" ? "white" : "#5e5e5e";
   }, [color]);
+
+  useEffect(() => {
+    const cardParagraphs = document.querySelectorAll(".card-body > p");
+    console.log(cardParagraphs);
+    for (let i = 0; i < cardParagraphs.length; i++) {
+      cardParagraphs[i].style.color = fontColor === "black" ? "green" : "black";
+    }
+    // cardParagraphs.map((item) => item.style.color = fontColor === "black" ? "green" : "black");
+    // document.body.style.color = fontColor === "black" ? "green" : "black";
+  }, [fontColor]);
 
   const handleHeader = () => {
     navigate("/all-routes");
@@ -55,7 +72,7 @@ const Header = ({ toggle }) => {
               <NavLink to="/Aframe">Aframe</NavLink>
             </NavItem>
           </NavMenu>
-          <NavBtn onClick={changeColor}>
+          <NavBtn onClick={changeAll}>
             <NavBtnLink to="">Dark Mode</NavBtnLink>
           </NavBtn>
         </NavbarContainer>

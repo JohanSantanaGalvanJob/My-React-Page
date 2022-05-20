@@ -5,10 +5,13 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    margin-top: 3em;
+    row-gap: 1em;
 }
 
 .card-container {
+    padding-top: 1em;
     width: 300px;
     overflow: hidden;
     box-shadow: 0px 0px 15px -5px;
@@ -34,5 +37,5 @@
 p {
     margin: 0;
     padding: 0;
-    color: green;
+    color: black;
 }

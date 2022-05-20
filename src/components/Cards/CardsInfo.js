@@ -22,8 +22,8 @@ const images = [
 export default function CardsInfo() {
     return (
         <div className="card-flexing">
-            {images.map((item) => (
-            <div className="card-container">
+            {images.map((item, index) => (
+            <div key={index} className="card-container">
                     <div className="image-container">
                         <img src={item.src} alt={item.alt} />
                     </div>

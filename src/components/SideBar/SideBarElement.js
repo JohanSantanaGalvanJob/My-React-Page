@@ -71,10 +71,10 @@ justify-content:center;
 
 export const SidebarRoute = styled(LinkR)`
 border-radius:50px;
-background:#694610;
+background:#709775;
 white-space: nowrap;
 padding: 16px 64px;
-color: #ffffff;
+color: #fff;
 font-size: 16px;
 outline:none;
 border:none;
