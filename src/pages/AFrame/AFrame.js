@@ -12,13 +12,20 @@ class AFrameProject extends React.Component {
         <AFrameHud />
         <a-assets>
           <video id="Route-1-Stop-3" loop={true} src={video1} autoPlay="true" />
+          <img id="" src=''/>
         </a-assets>
-        <a-camera>
-          <a-cursor cursor="fuse:true;fuseTimeout:2000" raycaster="objects: .clickable" />
-        </a-camera>
-        <a-videosphere src="#Route-1-Stop-3" />
-      </Scene>
 
+        <a-entity camera="" position="0 1.6 0" look-controls="" >
+          <a-entity cursor="fuse:true;fuseTimeout:2000" geometry="primitive:ring;radiusInner:0.01;radiusOuter:0.02" position="0 0 -1.8" material="shader:flat;color:#008000" animation__mouseenter="from:1 1 1;dir:reverse;dur:2000;property:scale;startEvents:mouseenter;to:4 4 4"
+            raycaster="objects: .clickable">
+          </a-entity>
+        </a-entity>
+
+        <a-videosphere src="#Route-1-Stop-3" rotation="0 0 0" />
+
+        <a-plane position="2.5 3 -1.3" rotation="160 110 0" height="0.5" width="0.5"  />
+
+      </Scene>
     );
   }
 
