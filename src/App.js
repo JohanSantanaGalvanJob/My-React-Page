@@ -9,6 +9,7 @@ import AllRoutes from "./pages/AllRoutes";
 import Rss from "./components/RSS/Rss";
 import AFrameProject from "./pages/AFrame/AFrame";
 import RouteDetail from "./pages/RouteDetail";
+import AFrameLobby from "./pages/AFrame/AFrameLobby";
 
 
 
@@ -18,6 +19,7 @@ function App() {
       <Router>
         <Routes>
         <Route path="/video-360/:route/:stop" element={<AFrameProject />} />
+        <Route path="/video-360" element={<AFrameLobby />} />
           <Route path="/all-routes" element={<AllRoutes />} />
           <Route path="/route-detail/:id" element={<RouteDetail />} />
           <Route path="/Rss" element={<Rss />} />
