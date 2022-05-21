@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import AllRoutes from "./pages/AllRoutes";
 import Rss from "./components/RSS/Rss";
 import AFrameProject from "./pages/AFrame/AFrame";
+import RouteDetail from "./pages/RouteDetail";
 
 
 
@@ -16,8 +17,9 @@ function App() {
     <>
       <Router>
         <Routes>
-        <Route path="/Aframe/:route/:stop" element={<AFrameProject />} />
+        <Route path="/video-360/:route/:stop" element={<AFrameProject />} />
           <Route path="/all-routes" element={<AllRoutes />} />
+          <Route path="/route-detail/:id" element={<RouteDetail />} />
           <Route path="/Rss" element={<Rss />} />
           <Route path="/home" element={<Home />} />
           <Route path="/" element={<Home />} />

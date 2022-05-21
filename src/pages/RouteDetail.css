@@ -1,0 +1,96 @@
+.route-detail-outer-container {
+  margin: 6em 1em 1em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 1em;
+}
+
+.route-detail-container {
+  flex: 1 1 50vw;
+
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.route-detail-id {
+  margin: 0 .5em 0 0;
+  min-width: 60px;
+  max-width: 60px;
+  min-height: 60px;
+  max-height: 60px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  line-height: 55px;
+  font-weight: bold;
+}
+
+.route-detail-name {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.route-detail-name-and-description {
+  font-size: small;
+  margin-right: 1em;
+}
+
+.route-detail-stops {
+  margin-top: 1em;
+}
+
+.route-detail-stops-with-data:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.route-detail-stops span {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.route-detail-stop-map {
+  flex: 1 1 50vw;
+
+  /* width: calc(100vw - 4em);
+  height: 50vw; */
+}
+
+.route-detail-more {
+  color:blue;
+  font-size: x-small;
+  font-weight: lighter;
+}
+
+/* Bootstrap 5 grid screen sizes
+Extra small (<576px) 	Small (>=576px) 	Medium (>=768px) 	Large (>=992px) 	Extra Large (>=1200px) 	XXL (>=1400px) */
+
+@media screen and (min-width: 576px) {
+  .route-detail-outer-container {
+    margin: 8em 2em 2em 2em;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between;
+    min-width: 0; */
+  }
+
+  .route-detail-name-and-description {
+    font-size: medium;
+  }
+
+  /* .route-detail-stop-map {
+    width: 40vw;
+    height: 50vh;
+  } */
+}
+
+/* @media screen and (min-width: 768px) {
+  .route-detail-stop-map {
+    width: 50vw;
+  }
+} */

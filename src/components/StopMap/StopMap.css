@@ -1,0 +1,22 @@
+.leaflet-container {
+  margin-top: 2em;
+  width: calc(100vw - 4em);
+  height: 50vw;
+}
+
+/* Bootstrap 5 grid screen sizes
+Extra small (<576px) 	Small (>=576px) 	Medium (>=768px) 	Large (>=992px) 	Extra Large (>=1200px) 	XXL (>=1400px) */
+
+@media screen and (min-width: 576px) {
+  .leaflet-container {
+    margin: 0;
+    width: 40vw;
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .leaflet-container {
+    width: 50vw;
+  }
+}
