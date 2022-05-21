@@ -6,6 +6,7 @@ import CarouselElement from '../components/Carrousel/CarrouselElements';
 import "./Home.css";
 import Footer from "../components/Footer/Footer";
 import CardsInfo from '../components/Cards/CardsInfo';
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
 
 
@@ -19,6 +20,7 @@ const Home = () => {
   return (
 
     <>
+    <ScrollToTop />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Header toggle={toggle} />
       <div className='home-carousel'>

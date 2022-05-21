@@ -5,7 +5,9 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import "./RouteDetail.css";
+import { useState } from "react"
 import { useEffect } from "react";
+import Sidebar from "../components/SideBar/index"
 
 export default function RouteDetail() {
   let { id } = useParams();
@@ -54,10 +56,17 @@ export default function RouteDetail() {
     );
   }
 
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  };
+
   return (
     <>
       <ScrollToTop />
-      <Header />
+      <Sidebar isOpen={isOpen} toggle={toggle}/>
+      <Header toggle={toggle} />
       <div className="route-detail-outer-container">
         {
           showRoute(infoRoutes[id])

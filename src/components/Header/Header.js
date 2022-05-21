@@ -20,18 +20,25 @@ const Header = ({ toggle }) => {
   const navigate = useNavigate();
   const [color, setColor] = useState("light");
   const [fontColor, setFontColor] = useState("white");
+  const [bodyFontColor, setBodyFontColor] = useState("white");
 
   const changeAll = () => {
     changeColor();
     changeFontColor();
+    changeBodyFontColor();
   }
 
   const changeColor = () => setColor(color === "light" ? "#5e5e5e" : "light");
   const changeFontColor = () => setFontColor(fontColor === "black" ? "white" : "black");
+  const changeBodyFontColor = () => setBodyFontColor(bodyFontColor === "black" ? "white" : "black");
 
   useEffect(() => {
     document.body.style.backgroundColor = color === "light" ? "white" : "#5e5e5e";
   }, [color]);
+
+  useEffect(() => {
+    document.body.style.color = bodyFontColor === "black" ? "white" : "black";
+  }, [bodyFontColor]);
 
   useEffect(() => {
     const cardParagraphs = document.querySelectorAll(".card-body > p");

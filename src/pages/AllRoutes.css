@@ -1,5 +1,5 @@
 .all-routes-container {
-  margin-top: 8em;
+  margin-top: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,6 @@
   text-align: center;
   margin: 1em;
   padding: .5em;
-  background-image: url(../../public/img/background_lines.jpg);
 }
 
 /* Bootstrap 5 grid screen sizes

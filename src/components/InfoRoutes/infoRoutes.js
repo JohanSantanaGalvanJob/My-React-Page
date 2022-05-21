@@ -243,7 +243,7 @@ export const infoRoutes = [
     id: 7,
     color: "orange",
     name: "Barranco de Azuaje",
-    description: "Ruta de Azuaje realizada por el alumnado de 2ºDAM-T del IES El Rincón",
+    description: "Ruta de Azuaje realizada por el alumnado de 1ºDAM-T del IES El Rincón",
     music: "",
     stops: [
       {
