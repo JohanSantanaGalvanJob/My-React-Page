@@ -16,7 +16,7 @@ function App() {
     <>
       <Router>
         <Routes>
-        <Route path="/Aframe" element={<AFrameProject />} />
+        <Route path="/Aframe/:route/:stop" element={<AFrameProject />} />
           <Route path="/all-routes" element={<AllRoutes />} />
           <Route path="/Rss" element={<Rss />} />
           <Route path="/home" element={<Home />} />

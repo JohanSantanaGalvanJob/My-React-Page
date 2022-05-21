@@ -9,20 +9,22 @@ import { infoRoutes } from '../../components/InfoRoutes/infoRoutes';
 export default function AFrameProject() {
   const { route, stop } = useParams();
 
-  useEffect(() => {
+  /*useEffect(() => {
     setVideoActive();
-  }, []);
+  }, []);*/
 
   return (
     <div className="my-container">
 
       <a-scene>
         <a-assets>
-          <video id="vid" loop={true} src={`src/assets/video/Route-${route}/Route-${route}-Stop-${stop}.mp4`} autoPlay={true} > </video>
+          <video id="vid" loop={true} src={`../../assets/video/Route-${route}/Route-${route}-Stop-${stop}.mp4`} autoPlay={true} />
         </a-assets>
 
         <a-entity camera="" position="0 1.6 0" look-controls="" >
-          <a-entity cursor="fuse:true;fuseTimeout:2000" geometry="primitive:ring;radiusInner:0.01;radiusOuter:0.02" position="0 0 -1.8" material="shader:flat;color:#FFFFF" animation__mouseenter="from:1 1 1;dir:reverse;dur:2000;property:scale;startEvents:mouseenter;to:4 4 4"
+          <a-entity cursor="fuse:true;fuseTimeout:2000" geometry="primitive:ring;radiusInner:0.01;radiusOuter:0.02"
+            position="0 0 -1.8" material="shader:flat;color:#FFFFF"
+            animation__mouseenter="from:1 1 1;dir:reverse;dur:2000;property:scale;startEvents:mouseenter;to:4 4 4"
             raycaster="objects: .clickable">
           </a-entity>
         </a-entity>
@@ -31,8 +33,6 @@ export default function AFrameProject() {
             <MenuItem key={index} x=".8" y="1.6" pos={index - 1} route={route} stop={index} textToShow={s.name} available={s.video !== ""} />
           )
         }
-
-
 
         <a-videosphere src="#vid" ></a-videosphere>
       </a-scene>

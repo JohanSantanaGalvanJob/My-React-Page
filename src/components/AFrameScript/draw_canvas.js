@@ -34,10 +34,7 @@ window.AFRAME.registerComponent('draw-canvas', {
 
     this.el.addEventListener('click', () => {
       const vid = document.getElementById("vid");
-    
-    
-      vid.setAttribute("src", `src/assets/video/Route-${this.data.route}/Route-${this.data.route}-Stop-${this.data.stop + 1}.mp4`);
-      
+      vid.setAttribute("src", `/../src/assets/video/Route-${this.data.route}/Route-${this.data.route}-Stop-${this.data.stop + 1}.mp4`);
     });
   },
   tick: function () {
