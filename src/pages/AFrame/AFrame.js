@@ -18,7 +18,7 @@ export default function AFrameProject() {
 
       <a-scene>
         <a-assets>
-          <video id="vid" loop={true} src={`../../assets/video/Route-${route}/Route-${route}-Stop-${stop}.mp4`} autoPlay={true} />
+          <video id="vid" loop={true} src={`/video/Route-${route}/Route-${route}-Stop-${stop}.mp4`} autoPlay={true} />
         </a-assets>
 
         <a-entity camera="" position="0 1.6 0" look-controls="" >

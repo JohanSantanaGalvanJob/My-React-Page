@@ -67,7 +67,7 @@ const Header = ({ toggle }) => {
               <NavLink to="/Rss">Canal RSS</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/Aframe">Aframe</NavLink>
+              <NavLink to="/Aframe/5/1">Aframe</NavLink>
             </NavItem>
           </NavMenu>
           <NavBtn onClick={changeAll}>
