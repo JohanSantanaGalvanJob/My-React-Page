@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import MenuItem from '../../components/AFrameScript/MenuItem';
 import { useParams } from 'react-router-dom';
 import { infoRoutes } from '../../components/InfoRoutes/infoRoutes';
+import "../../components/AFrameScript/back-to-home";
 
 export default function AFrameProject() {
   const { route, stop } = useParams();
@@ -19,6 +20,7 @@ export default function AFrameProject() {
       <a-scene>
         <a-assets>
           <video id="vid" loop={true} src={`/video/Route-${route}/Route-${route}-Stop-${stop}.mp4`} autoPlay={true} />
+          <img id="logo-menu" src="/img/LogoSabiosGuias.png" />
         </a-assets>
 
         <a-entity camera="" position="0 1.6 0" look-controls="" >
@@ -33,6 +35,8 @@ export default function AFrameProject() {
             <MenuItem key={index} x=".8" y="1.6" pos={index - 1} route={route} stop={index} textToShow={s.name} available={s.video !== ""} />
           )
         }
+
+        <a-plane class="clickable" material="#logo-menu" position="1 2.5 -2.5" width="0.3" height="0.3" back-to-home />
 
         <a-videosphere src="#vid" ></a-videosphere>
       </a-scene>
