@@ -36,7 +36,7 @@ export default function AFrameProject() {
           )
         }
 
-        <a-plane class="clickable" material="#logo-menu" position="1 2.5 -2.5" width="0.3" height="0.3" back-to-home />
+        <a-plane class="clickable" src="#logo-menu" width="1.25" height="0.60" position="1 2.5 -2.5" back-to-home />
 
         <a-videosphere src="#vid" ></a-videosphere>
       </a-scene>
