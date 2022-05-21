@@ -9,9 +9,9 @@ import { infoRoutes } from '../../components/InfoRoutes/infoRoutes';
 export default function AFrameProject() {
   const { route, stop } = useParams();
 
-  /*useEffect(() => {
+  useEffect(() => {
     setVideoActive();
-  }, []);*/
+  }, []);
 
   return (
     <div className="my-container">
