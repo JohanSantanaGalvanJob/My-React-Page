@@ -20,13 +20,23 @@ const Home = () => {
   return (
 
     <>
-    <ScrollToTop />
+      <ScrollToTop />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Header toggle={toggle} />
       <div className='home-carousel'>
         <CarouselElement />
       </div>
       <CardsInfo />
+      <div className="video-home">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Ztg7kqNP8DE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen />
+      </div>
       <Footer />
     </>
   );

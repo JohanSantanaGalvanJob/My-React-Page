@@ -12,6 +12,19 @@
   margin-top: 1em;
 }
 
+.video-home {
+  padding-top: 1.5%;
+  padding-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.video-home > * {
+  width: 50vw;
+  height: 27vw;
+}
+
 .home-array-text-item{
   width: 30vw;
   padding: 1em;
