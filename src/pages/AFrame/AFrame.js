@@ -31,19 +31,21 @@ export default function AFrameProject() {
             raycaster="objects: .clickable">
           </a-entity>
         </a-entity>
+        
+        <a-entity>
+          <a-link position="1.265 2.456 -2.429" rotation="0 0 0" scale="0.4 0.4 0.4"
+            title="Volver al Lobby" image="#logo-menu"
+          ></a-link>
+        </a-entity>
         {
           infoRoutes[route - 1].stops.map((s, index) =>
             <MenuItem key={index} x=".8" y="1.6" pos={index - 1} route={route} stop={index} textToShow={s.name} available={s.video !== ""} />
           )
         }
 
-        <a-entity>
-          <a-link position="1.3 2.5 -2.5" rotation="0 0 0" scale="0.2 0.2 0.2"
-            title="Barranco de Azuaje" image="#logo-menu"
-          ></a-link>
-        </a-entity>
         
-        <a-circle class="clickable" material="opacity: 0.0; transparent: true" position="1.3 2.5 -2.5" radius="0.2" back-to-home ></a-circle>
+        
+        <a-circle class="clickable" material="opacity: 0.0; transparent: true" position="1.265 2.456 -2.429" radius="0.4" back-to-home ></a-circle>
 
         {/* <a-plane class="clickable" src="#logo-menu" width="0.5" height="0.5" position="1.3 2.5 -2.5" back-to-home /> */}
 
