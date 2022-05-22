@@ -43,13 +43,7 @@ export default function AFrameProject() {
           )
         }
 
-        
-        
         <a-circle class="clickable" material="opacity: 0.0; transparent: true" position="1.265 2.456 -2.429" radius="0.4" back-to-home ></a-circle>
-
-        {/* <a-plane class="clickable" src="#logo-menu" width="0.5" height="0.5" position="1.3 2.5 -2.5" back-to-home /> */}
-
-        <a-plane class="clickable" src="#logo-volume" width="0.2" height="0.2" position="0.7 2.5 -2.5" change-volume />
 
         <a-videosphere src="#vid" ></a-videosphere>
       </a-scene>

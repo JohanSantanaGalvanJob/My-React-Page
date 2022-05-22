@@ -84,7 +84,7 @@ export default function AFrameLobby() {
         <a-circle class="clickable" material="opacity: 0.0; transparent: true" position="1.5 2.5 -2.5"  radius="0.5"  back-to-route5 ></a-circle>
         <a-circle class="clickable" material="opacity: 0.0; transparent: true" position="-1.5 2.5 -2.5"  radius="0.5"  back-to-route7 ></a-circle>
 
-        <a-plane material="src: #my-canvas; transparent: true" position="0 1 -2.5" scale="1.5 2 1" text-canvas>
+        <a-plane material="src: #my-canvas; transparent: true" position="-0.07 1 -2.5" scale="1.5 2 1" text-canvas>
         </a-plane>
 
         <a-videosphere src="#logo-lobby" ></a-videosphere>
