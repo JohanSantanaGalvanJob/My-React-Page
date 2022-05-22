@@ -36,9 +36,7 @@ const Home = () => {
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen />
-      </div>
-      <div className="video-home">
-        <iframe
+          <iframe
           width="500"
           height="280"
           src="https://www.youtube.com/embed/5S9rfFyu634"
@@ -47,6 +45,7 @@ const Home = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen />
       </div>
+     
       <Footer />
     </>
   );
