@@ -20,7 +20,8 @@ export default function AFrameProject() {
       <a-scene>
         <a-assets>
           <video id="vid" loop={true} src={`/video/Route-${route}/Route-${route}-Stop-${stop}.mp4`} autoPlay={true} />
-          <img id="logo-menu" src="/img/LogoSabiosGuias.png" />
+          <img id="logo-menu" src="/img/house-icon.png" />
+          <img id="logo-volume" src="/img/sound_on.png" />
         </a-assets>
 
         <a-entity camera="" position="0 1.6 0" look-controls="" >
@@ -36,7 +37,17 @@ export default function AFrameProject() {
           )
         }
 
-        <a-plane class="clickable" src="#logo-menu" width="1.25" height="0.60" position="1 2.5 -2.5" back-to-home />
+        <a-entity>
+          <a-link position="1.3 2.5 -2.5" rotation="0 0 0" scale="0.2 0.2 0.2"
+            title="Barranco de Azuaje" image="#logo-menu"
+          ></a-link>
+        </a-entity>
+        
+        <a-circle class="clickable" material="opacity: 0.0; transparent: true" position="1.3 2.5 -2.5" radius="0.2" back-to-home ></a-circle>
+
+        {/* <a-plane class="clickable" src="#logo-menu" width="0.5" height="0.5" position="1.3 2.5 -2.5" back-to-home /> */}
+
+        <a-plane class="clickable" src="#logo-volume" width="0.2" height="0.2" position="0.7 2.5 -2.5" change-volume />
 
         <a-videosphere src="#vid" ></a-videosphere>
       </a-scene>
