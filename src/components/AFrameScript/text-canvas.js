@@ -25,6 +25,10 @@ window.AFRAME.registerComponent('text-canvas', {
         this.ctx.fillText("botánica de las islas, de tal forma que las",40 , 150);
         this.ctx.fillText("plantas se sintieran casi tan cómodas",40 , 170);
         this.ctx.fillText("como en sus sitios de origen. ",40 , 190);
+        this.ctx.fillText("En agosto de 1974 se hizo cargo",40 , 230);
+        this.ctx.fillText("de la Dirección el Dr. David Bramwell",40 , 250);
+        this.ctx.fillText("especialista en la flora y biogeografía ",40 , 270);
+        this.ctx.fillText("de las islas. ",40 , 290);
         this.el.addEventListener('mouseenter', function () {
 
         });
