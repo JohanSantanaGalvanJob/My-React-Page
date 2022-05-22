@@ -65,9 +65,6 @@ const Header = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLink to="/">Inicio</NavLink>
-            </NavItem>
-            <NavItem>
               <NavLink to="/all-routes">Todas las rutas</NavLink>
             </NavItem>
             <NavItem>
