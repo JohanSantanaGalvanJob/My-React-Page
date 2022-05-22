@@ -16,11 +16,18 @@ export default function AFrameLobby() {
 
       <a-scene>
         <a-assets>
-          <img id="logo-lobby" src="/img/lobby.jpg" />
-          <img id="logo-menu" src="/img/LogoSabiosGuias.png" />
-          <img id="canarian-garden" src="/img/barranco_azuaje.jpg" />
-          <img id="Azuaje-landscape" src="/img/jardin_canario.jpg" />
+          <img id="logo-lobby" src="/img/lobby.jpg" alt="lobby" />
+          <img id="logo-menu" src="/img/LogoSabiosGuias.png" alt="logo" />
+          <img id="azuaje-landscape" src="/img/barranco_azuaje.jpg" alt="lanscape" />
+          <img id="canarian-garden" src="/img/jardin_canario.jpg" alt="garden" />
+          <img id="aguimes-history" src="/img/aguimesPreview.jpg" alt="history" />
+          <img id="las-palmas" src="/img/lasPalmasPreview.jpg" alt="las-palmas" />
+          <img id="british-feet" src="/img/britishFeetPreview.jpg" alt="british-feet" />
+          <img id="language-inmersive" src="/img/languagePreview.jpg" alt="language-inmersive" />
+
         </a-assets>
+
+        <a-sound src="/mp3/musicLobby.mp3" autoplay="true" position="0 2.5 -2.5" volume="0.75" />
 
         <a-entity camera="" position="0 1.6 0" look-controls="" >
           <a-entity cursor="fuse:true;fuseTimeout:2000" geometry="primitive:ring;radiusInner:0.01;radiusOuter:0.02"
@@ -32,25 +39,25 @@ export default function AFrameLobby() {
 
         <a-entity>
             <a-link position="1.5 1 -2.5" rotation="0 0 0" scale="0.5 0.5 0.5"
-                title="Casco historico de Aguimes" image=""
+                title="Casco historico de Aguimes" image="#aguimes-history"
                ></a-link>
         </a-entity>
 
         <a-entity>
             <a-link position="-1.5 1 -2.5" rotation="0 0 0" scale="0.5 0.5 0.5"
-                title="Las Palmas de GC" image=""
+                title="Las Palmas de GC" image="#las-palmas"
                ></a-link>
         </a-entity>
 
         <a-entity>
             <a-link position="-3 1.75 -2.5" rotation="0 0 0" scale="0.5 0.5 0.5"
-                title="Huellas Britanicas" image=""
+                title="Huellas Britanicas" image="#british-feet"
                ></a-link>
         </a-entity>
 
         <a-entity>
             <a-link position="3 1.75 -2.5" rotation="0 0 0" scale="0.5 0.5 0.5"
-                title="Inmersion linguistica" image=""
+                title="Inmersion linguistica" image="#language-inmersive"
                ></a-link>
         </a-entity>
 
@@ -62,7 +69,7 @@ export default function AFrameLobby() {
 
         <a-entity>
             <a-link position="-1.5 2.5 -2.5" rotation="0 0 0" scale="0.5 0.5 0.5"
-                title="Barranco de Azuaje" image="#Azuaje-landscape"
+                title="Barranco de Azuaje" image="#azuaje-landscape"
                 ></a-link>
         </a-entity>
 
