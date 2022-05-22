@@ -52,6 +52,8 @@ When it comes to the real body part of the Home Page, I decided to make a simple
 
 ![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/body.PNG)
 
+![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/dark_body.PNG)
+
 Finally, there it is a footer that contains images that redirects to their own websites, some text with contact Number, address, etc.
 
 ![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/footer.PNG)
