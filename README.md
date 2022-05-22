@@ -40,21 +40,33 @@ Enjoy!!!
 
 This Home Page was built with some components. 
 
-The first one is the header and its sidebar (if you are on mobile phone). The chosen color was this one to connect with the project itself. 
+The first one is the header and its sidebar (if you are on mobile phone). The chosen color was this to connect with the theme of the project itself. 
 
-![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/1.PNG)
+![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/header.PNG)
 
-Secondly, there is a completely functional carousel made with a library that uses as a dependency bootstrap styles. This carousel only has three images inserted, but my objective is to implement many more in the future.
+Secondly, there is a completely functional carousel made with a library that uses as a dependency bootstrap styles. This carousel has six images inserted.
 
-![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/2.PNG)
+![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/carousel.PNG)
 
 When it comes to the real body part of the Home Page, I decided to make a simple yet effective text area where you can see an image, a title attached to it, and some text (only in spanish at the moment) that works as an introduction to this project.
 
-![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/3.PNG)
+![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/body.PNG)
 
 Finally, there it is a footer that contains images that redirects to their own websites, some text with contact Number, address, etc.
 
-![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/4.PNG)
+![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/footer.PNG)
+
+## All Routes
+
+This page has been taken from our teacher Tiburcio that led us this page. It serves as a connection to information of some of the routes if you want a web style from the routes if you don't want to touch anything related to A-frame.
+
+![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/all_routes_body.PNG)
+
+## Route Detail
+
+This page is related and linked from the all routes page. This one contains information about one of the selected routes and also has a location in the map of the route. 
+
+![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/route_detail_body.PNG)
 
 ## Components Explained
 
@@ -62,7 +74,7 @@ React has allowed me to recycle the code that I need in some pages (like the hea
 
 In the source code, you can see a folder called 'components' and another one called 'pages'. The pages folder is only a subgroup of components practically. It works like the HTML Files and it contains the Home and the AllRoutes. 
 
-For the component Folder you can see many other folders with the name of the components (this was made because some components has the core code and the styles). These components are: The carousel used for the Home Page, the footer, the header and its sidebar, and two more folders that are not going to be used in this first version of the project.
+For the component Folder you can see many other folders with the name of the components (this was made because some components has the core code and the styles). These components are: The carousel used for the Home Page, the footer, the header and its sidebar, a complete folder only for the A-frame part called AFrameScript, the cards that contains an image and text, the RSS with the .xml file, the information of the routes, and the scroll to top that is nothing less that a button that puts you at the top of the page. 
 
 ## Built With
 
