@@ -44,6 +44,8 @@ The first one is the header and its sidebar (if you are on mobile phone). The ch
 
 ![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/header.PNG)
 
+![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/side_bar.PNG)
+
 Secondly, there is a completely functional carousel made with a library that uses as a dependency bootstrap styles. This carousel has six images inserted.
 
 ![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/carousel.PNG)
@@ -69,6 +71,17 @@ This page has been taken from our teacher Tiburcio that led us this page. It ser
 This page is related and linked from the all routes page. This one contains information about one of the selected routes and also has a location in the map of the route. 
 
 ![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/route_detail_body.PNG)
+
+## A-Frame
+
+The real part of this project is using VR technologies to perform a good, enjoyable and interactive webpage. You can access from it by clicking to AFrame in the header or by going into the route detail and selecting which one do you want.
+
+Most of the routes are the same. It has a canvas to select where to go at any moment and a circle to go back to the a-frame lobby. This lobby has some circles that redirects to the first video of the A-Frame with a canvas of the description of one of the routes (the one that was chosen by us). A logo that takes back to the home page, and some background music.
+
+![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/AFrame.PNG)
+
+![Image text](https://github.com/JohanSantanaGalvanJob/My-React-Page/blob/master/README-FILES/AFrame2.PNG)
+
 
 ## Components Explained
 
