@@ -29,15 +29,6 @@ const Footer = () => {
                                 <li>Sabios Guías Intérpretes</li>
                             </ul>
                         </div>
-                        {/* Column3 */}
-                        <div className="col">
-                            <h4>LOREM IPSUM</h4>
-                            <ul className="list-unstyled">
-                                <li>ROW 1</li>
-                                <li>ROW 2</li>
-                                <li>ROW 3</li>
-                            </ul>
-                        </div>
                     </div>
                     <hr />
                     <div className="row" >

@@ -21,6 +21,7 @@
 }
 
 .video-home > * {
+  margin-top: 2em;
   width: 50vw;
   height: 27vw;
 }
