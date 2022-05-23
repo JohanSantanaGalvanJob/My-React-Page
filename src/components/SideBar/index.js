@@ -44,7 +44,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="/">Inicio</SidebarLink>
           <SidebarLink to="/all-routes">Todas las Rutas</SidebarLink>
           <SidebarLink to="/Rss">Canal RSS</SidebarLink>
-          <SidebarLink to="/Aframe">Ruta A-Frame</SidebarLink>
+          <SidebarLink to="/video-360/">Ruta A-Frame</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap onClick={changeAll}>
           <SidebarRoute to=''>Dark Mode</SidebarRoute>
