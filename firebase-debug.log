@@ -1,0 +1,228 @@
+[debug] [2022-05-23T11:08:21.878Z] ----------------------------------------------------------------------
+[debug] [2022-05-23T11:08:21.879Z] Command:       D:\Program Files\nodejs\node.exe C:\Users\jdejo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-23T11:08:21.880Z] CLI Version:   11.0.0
+[debug] [2022-05-23T11:08:21.880Z] Platform:      win32
+[debug] [2022-05-23T11:08:21.880Z] Node Version:  v16.13.2
+[debug] [2022-05-23T11:08:21.881Z] Time:          Mon May 23 2022 12:08:21 GMT+0100 (hora de verano de Europa occidental)
+[debug] [2022-05-23T11:08:21.881Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-23T11:08:21.932Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-23T11:08:21.932Z] > authorizing via signed-in user (johansantanagalvan.job@gmail.com)
+[debug] [2022-05-23T11:08:21.932Z] [iam] checking project sabiosguiasjordanjohan for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-23T11:08:21.934Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions [none]
+[debug] [2022-05-23T11:08:21.934Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-23T11:08:45.635Z] ----------------------------------------------------------------------
+[debug] [2022-05-23T11:08:45.637Z] Command:       D:\Program Files\nodejs\node.exe C:\Users\jdejo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-23T11:08:45.637Z] CLI Version:   11.0.0
+[debug] [2022-05-23T11:08:45.637Z] Platform:      win32
+[debug] [2022-05-23T11:08:45.637Z] Node Version:  v16.13.2
+[debug] [2022-05-23T11:08:45.638Z] Time:          Mon May 23 2022 12:08:45 GMT+0100 (hora de verano de Europa occidental)
+[debug] [2022-05-23T11:08:45.638Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-23T11:08:45.706Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-23T11:08:45.706Z] > authorizing via signed-in user (johansantanagalvan.job@gmail.com)
+[debug] [2022-05-23T11:08:45.706Z] [iam] checking project sabiosguiasjordanjohan for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-23T11:08:45.708Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions [none]
+[debug] [2022-05-23T11:08:45.708Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-23T11:08:46.542Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions 200
+[debug] [2022-05-23T11:08:46.542Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-23T11:08:46.544Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan [none]
+[debug] [2022-05-23T11:08:46.852Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan 200
+[debug] [2022-05-23T11:08:46.852Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan {"projectId":"sabiosguiasjordanjohan","projectNumber":"596289904","displayName":"SabiosGuiasJordanJohan","name":"projects/sabiosguiasjordanjohan","resources":{"hostingSite":"sabiosguiasjordanjohan"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'sabiosguiasjordanjohan'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-05-23T11:08:46.855Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan [none]
+[debug] [2022-05-23T11:08:47.130Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan 200
+[debug] [2022-05-23T11:08:47.130Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan {"projectId":"sabiosguiasjordanjohan","projectNumber":"596289904","displayName":"SabiosGuiasJordanJohan","name":"projects/sabiosguiasjordanjohan","resources":{"hostingSite":"sabiosguiasjordanjohan"},"state":"ACTIVE"}
+[debug] [2022-05-23T11:08:47.139Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions [none]
+[debug] [2022-05-23T11:08:47.139Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-05-23T11:08:48.349Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions 500
+[debug] [2022-05-23T11:08:48.349Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-05-23T11:08:48.515Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-05-23T11:11:09.135Z] ----------------------------------------------------------------------
+[debug] [2022-05-23T11:11:09.136Z] Command:       D:\Program Files\nodejs\node.exe C:\Users\jdejo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-23T11:11:09.137Z] CLI Version:   11.0.0
+[debug] [2022-05-23T11:11:09.137Z] Platform:      win32
+[debug] [2022-05-23T11:11:09.137Z] Node Version:  v16.13.2
+[debug] [2022-05-23T11:11:09.137Z] Time:          Mon May 23 2022 12:11:09 GMT+0100 (hora de verano de Europa occidental)
+[debug] [2022-05-23T11:11:09.138Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-23T11:11:09.190Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-23T11:11:09.190Z] > authorizing via signed-in user (johansantanagalvan.job@gmail.com)
+[debug] [2022-05-23T11:11:09.191Z] [iam] checking project sabiosguiasjordanjohan for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-23T11:11:09.193Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions [none]
+[debug] [2022-05-23T11:11:09.193Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-23T11:11:10.101Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions 200
+[debug] [2022-05-23T11:11:10.102Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-23T11:11:10.104Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan [none]
+[debug] [2022-05-23T11:11:10.428Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan 200
+[debug] [2022-05-23T11:11:10.429Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan {"projectId":"sabiosguiasjordanjohan","projectNumber":"596289904","displayName":"SabiosGuiasJordanJohan","name":"projects/sabiosguiasjordanjohan","resources":{"hostingSite":"sabiosguiasjordanjohan"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'sabiosguiasjordanjohan'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-05-23T11:11:10.439Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan [none]
+[debug] [2022-05-23T11:11:10.741Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan 200
+[debug] [2022-05-23T11:11:10.742Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan {"projectId":"sabiosguiasjordanjohan","projectNumber":"596289904","displayName":"SabiosGuiasJordanJohan","name":"projects/sabiosguiasjordanjohan","resources":{"hostingSite":"sabiosguiasjordanjohan"},"state":"ACTIVE"}
+[debug] [2022-05-23T11:11:10.743Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions [none]
+[debug] [2022-05-23T11:11:10.743Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-05-23T11:11:11.912Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions 500
+[debug] [2022-05-23T11:11:11.912Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-05-23T11:11:12.064Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-05-23T11:16:04.534Z] ----------------------------------------------------------------------
+[debug] [2022-05-23T11:16:04.535Z] Command:       D:\Program Files\nodejs\node.exe C:\Users\jdejo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-23T11:16:04.536Z] CLI Version:   11.0.0
+[debug] [2022-05-23T11:16:04.536Z] Platform:      win32
+[debug] [2022-05-23T11:16:04.536Z] Node Version:  v16.13.2
+[debug] [2022-05-23T11:16:04.537Z] Time:          Mon May 23 2022 12:16:04 GMT+0100 (hora de verano de Europa occidental)
+[debug] [2022-05-23T11:16:04.537Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-23T11:16:04.586Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-23T11:16:04.587Z] > authorizing via signed-in user (johansantanagalvan.job@gmail.com)
+[debug] [2022-05-23T11:16:04.587Z] [iam] checking project sabiosguiasjordanjohan for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-23T11:16:04.588Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions [none]
+[debug] [2022-05-23T11:16:04.589Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-23T11:16:05.407Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions 200
+[debug] [2022-05-23T11:16:05.408Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-23T11:16:05.408Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan [none]
+[debug] [2022-05-23T11:16:05.743Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan 200
+[debug] [2022-05-23T11:16:05.743Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan {"projectId":"sabiosguiasjordanjohan","projectNumber":"596289904","displayName":"SabiosGuiasJordanJohan","name":"projects/sabiosguiasjordanjohan","resources":{"hostingSite":"sabiosguiasjordanjohan"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'sabiosguiasjordanjohan'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-05-23T11:16:05.749Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan [none]
+[debug] [2022-05-23T11:16:06.053Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan 200
+[debug] [2022-05-23T11:16:06.053Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan {"projectId":"sabiosguiasjordanjohan","projectNumber":"596289904","displayName":"SabiosGuiasJordanJohan","name":"projects/sabiosguiasjordanjohan","resources":{"hostingSite":"sabiosguiasjordanjohan"},"state":"ACTIVE"}
+[debug] [2022-05-23T11:16:06.061Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions [none]
+[debug] [2022-05-23T11:16:06.061Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-05-23T11:16:07.268Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions 500
+[debug] [2022-05-23T11:16:07.268Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-05-23T11:16:07.432Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-05-23T11:17:49.001Z] ----------------------------------------------------------------------
+[debug] [2022-05-23T11:17:49.002Z] Command:       D:\Program Files\nodejs\node.exe C:\Users\jdejo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-23T11:17:49.003Z] CLI Version:   11.0.0
+[debug] [2022-05-23T11:17:49.003Z] Platform:      win32
+[debug] [2022-05-23T11:17:49.003Z] Node Version:  v16.13.2
+[debug] [2022-05-23T11:17:49.004Z] Time:          Mon May 23 2022 12:17:49 GMT+0100 (hora de verano de Europa occidental)
+[debug] [2022-05-23T11:17:49.004Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-23T11:17:49.054Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-23T11:17:49.054Z] > authorizing via signed-in user (johansantanagalvan.job@gmail.com)
+[debug] [2022-05-23T11:17:49.054Z] [iam] checking project sabiosguiasjordanjohan for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-23T11:17:49.056Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions [none]
+[debug] [2022-05-23T11:17:49.056Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-23T11:17:49.932Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions 200
+[debug] [2022-05-23T11:17:49.932Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-23T11:17:49.933Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan [none]
+[debug] [2022-05-23T11:17:50.251Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan 200
+[debug] [2022-05-23T11:17:50.251Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan {"projectId":"sabiosguiasjordanjohan","projectNumber":"596289904","displayName":"SabiosGuiasJordanJohan","name":"projects/sabiosguiasjordanjohan","resources":{"hostingSite":"sabiosguiasjordanjohan"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'sabiosguiasjordanjohan'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-05-23T11:17:50.254Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan [none]
+[debug] [2022-05-23T11:17:50.558Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan 200
+[debug] [2022-05-23T11:17:50.558Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan {"projectId":"sabiosguiasjordanjohan","projectNumber":"596289904","displayName":"SabiosGuiasJordanJohan","name":"projects/sabiosguiasjordanjohan","resources":{"hostingSite":"sabiosguiasjordanjohan"},"state":"ACTIVE"}
+[debug] [2022-05-23T11:17:50.560Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions [none]
+[debug] [2022-05-23T11:17:50.560Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-05-23T11:17:51.697Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions 500
+[debug] [2022-05-23T11:17:51.698Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-05-23T11:17:51.841Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-05-23T11:18:55.665Z] ----------------------------------------------------------------------
+[debug] [2022-05-23T11:18:55.666Z] Command:       D:\Program Files\nodejs\node.exe C:\Users\jdejo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-23T11:18:55.667Z] CLI Version:   11.0.0
+[debug] [2022-05-23T11:18:55.667Z] Platform:      win32
+[debug] [2022-05-23T11:18:55.667Z] Node Version:  v16.13.2
+[debug] [2022-05-23T11:18:55.668Z] Time:          Mon May 23 2022 12:18:55 GMT+0100 (hora de verano de Europa occidental)
+[debug] [2022-05-23T11:18:55.668Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-23T11:18:55.717Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-23T11:18:55.717Z] > authorizing via signed-in user (johansantanagalvan.job@gmail.com)
+[debug] [2022-05-23T11:18:55.717Z] [iam] checking project sabiosguiasjordanjohan for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-23T11:18:55.719Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions [none]
+[debug] [2022-05-23T11:18:55.719Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-23T11:18:56.527Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions 200
+[debug] [2022-05-23T11:18:56.527Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sabiosguiasjordanjohan:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-23T11:18:56.528Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan [none]
+[debug] [2022-05-23T11:18:56.826Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan 200
+[debug] [2022-05-23T11:18:56.827Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan {"projectId":"sabiosguiasjordanjohan","projectNumber":"596289904","displayName":"SabiosGuiasJordanJohan","name":"projects/sabiosguiasjordanjohan","resources":{"hostingSite":"sabiosguiasjordanjohan"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'sabiosguiasjordanjohan'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-05-23T11:18:56.829Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan [none]
+[debug] [2022-05-23T11:18:57.153Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan 200
+[debug] [2022-05-23T11:18:57.153Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sabiosguiasjordanjohan {"projectId":"sabiosguiasjordanjohan","projectNumber":"596289904","displayName":"SabiosGuiasJordanJohan","name":"projects/sabiosguiasjordanjohan","resources":{"hostingSite":"sabiosguiasjordanjohan"},"state":"ACTIVE"}
+[debug] [2022-05-23T11:18:57.154Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions [none]
+[debug] [2022-05-23T11:18:57.154Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-05-23T11:18:58.307Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions 500
+[debug] [2022-05-23T11:18:58.308Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/596289904/sites/sabiosguiasjordanjohan/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-05-23T11:18:58.449Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}

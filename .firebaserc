@@ -1,7 +1,5 @@
 {
   "projects": {
-    "jordanjohan": "sabiosguiasjordanjohan",
     "default": "sabiosguiasjordanjohan"
-  },
-  "targets": {}
+  }
 }
