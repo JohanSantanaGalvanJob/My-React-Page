@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/My-React-Page/static/css/main.a7b256c6.css",
+    "main.js": "/My-React-Page/static/js/main.839ce168.js",
+    "static/media/sabios_guias_5.jpg": "/My-React-Page/static/media/sabios_guias_5.3833d60dd2223de82d85.jpg",
+    "static/media/sabios_guias_6.jpg": "/My-React-Page/static/media/sabios_guias_6.83acb2f09404492640bd.jpg",
+    "static/media/sabios_guias_4.jpg": "/My-React-Page/static/media/sabios_guias_4.a18923075025754e24e4.jpg",
+    "static/media/sabios_guias_2.jpg": "/My-React-Page/static/media/sabios_guias_2.831a406e02506313b990.jpg",
+    "static/media/sabios_guias_3.jpg": "/My-React-Page/static/media/sabios_guias_3.b33c0c7e89d085d353db.jpg",
+    "static/media/sabios_guias_1.jpg": "/My-React-Page/static/media/sabios_guias_1.392411a1897dc1408432.jpg",
+    "static/media/LogoSabiosGuias-Inverso.png": "/My-React-Page/static/media/LogoSabiosGuias-Inverso.ea0fd2b29266b85d8985.png",
+    "static/media/vidassabias_icon.png": "/My-React-Page/static/media/vidassabias_icon.0c0ac3e1fe910fd993ab.png",
+    "static/media/educacion_icon.png": "/My-React-Page/static/media/educacion_icon.6e78a04acab88cb040b7.png",
+    "static/media/guias_icon.png": "/My-React-Page/static/media/guias_icon.f6968cd3b8f0bad0bd3d.png",
+    "static/media/Rss.xml": "/My-React-Page/static/media/Rss.816c88c4705af52ffff1.xml",
+    "index.html": "/My-React-Page/index.html",
+    "main.a7b256c6.css.map": "/My-React-Page/static/css/main.a7b256c6.css.map",
+    "main.839ce168.js.map": "/My-React-Page/static/js/main.839ce168.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7b256c6.css",
+    "static/js/main.839ce168.js"
+  ]
+}
